@@ -43,11 +43,11 @@ public class Medalla {
     public String descripcio(){
         int posicioMedalla = getMedallaPosicio();
         switch (posicioMedalla) {
-            case 1:
+            case MEDALLA_OR:
                 return "L'atleta " + getAtletaNom() + " ha guanyat una medalla d' or en obtenir la posició " + posicioMedalla + " a la seva prova de " + getAtletaDisciplina();
-            case 2:
+            case MEDALLA_ARGENT:
                 return "L'atleta " + getAtletaNom() + " ha guanyat una medalla d' argent en obtenir la posició " + posicioMedalla + " a la seva prova de " + getAtletaDisciplina();
-            case 3:
+            case MEDALLA_BRONZE:
                 return "L'atleta " + getAtletaNom() + " ha guanyat una medalla de bronze en obtenir la posició " + posicioMedalla + " a la seva prova de " + getAtletaDisciplina();
             default:
              return "MEDALLA NO VÀLIDA";

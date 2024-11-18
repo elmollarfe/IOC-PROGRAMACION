@@ -11,9 +11,12 @@ public class InputUtils {
     static String readLine() {
         boolean tipusCorrecte = scan.hasNextLine();
         if (tipusCorrecte) {
-
-            return scan.nextLine();
-
+            String text = scan.nextLine();
+            if (text.equals("" ) || text.equals(" ")) {
+                System.out.println("Error codi -1");
+                return "-1";
+            }
+            return text;
         } else { 
             return "-1";
         }
@@ -25,9 +28,8 @@ public class InputUtils {
         if (tipusCorrecte) {
             return scan.nextInt();
         } else {
-            System.err.println("Codi error -1");
+            System.out.println("Codi error -1");
             return -1;
         }
-    }
-        
+    }        
 }
