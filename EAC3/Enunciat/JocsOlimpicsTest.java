@@ -17,19 +17,13 @@ public class JocsOlimpicsTest {
       assert atleta.getNumMedalles() == 10 : "Error: no hi han 10 medalles";
 
       // Generar 3 medalles més pel mateix atleta i país
-
-        
           for (int i = 0; i < 3; i++) {
-            int numeroMedalles = atleta.getNumMedalles();
-            if(numeroMedalles < 10){
               new Medalla(1, atleta);
-
-            }
         }
           
 
       // verificar amb una asserció el nombre de medalles del país el 10.
-      assert pais.getNumMedalles() == 10 : " Nombre de medalles del pais es més de 10. ";
+        assert pais.getNumMedalles() == 10 : " El nombre de medalles del pais no es 10. ";
 
       // Generar 3 medalles més pel mateix país, però d’un altre atleta diferent.
 
@@ -50,7 +44,7 @@ public class JocsOlimpicsTest {
 
       Atleta atletaTercer = new Atleta("Didac", paisSegon, "Natacio");
 
-      Medalla medalla = new Medalla(3,atletaTercer);
+      new Medalla(3,atletaTercer);
       
       // Verificar que el nou atleta té 1 medalla, el nou país també en té 1 medalla i que els atletes del primer país segueixen amb 10 i 3 medalles i el país amb 13.
 

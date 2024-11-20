@@ -24,7 +24,7 @@ public class InputUtils {
         boolean tipusCorrecte = scan.hasNextInt(); 
         while (!tipusCorrecte) {
             scan.next();
-            System.out.println("El valor introduit ha de ser un nombre: ");
+            System.out.print("El valor introduit ha de ser un nombre: ");
             tipusCorrecte = scan.hasNextInt();
         }
 

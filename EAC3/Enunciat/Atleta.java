@@ -18,10 +18,15 @@ public class Atleta {
         
     }
 
-    void guanyarMedalla(Medalla m) {
+    public boolean guanyarMedalla(Medalla m) {
+        if(numMedalles<10){
             medallesAtleta[numMedalles] = m ;
             numMedalles++;
-
+            return true;
+        } else {
+            return false; 
+        }
+          
     }
 
     public void mostrarMedalles(){

@@ -23,9 +23,11 @@ public class Medalla {
         if (posicio >= MEDALLA_OR && posicio <= MEDALLA_BRONZE) {
             this.posicio = posicio;
             this.atleta = guanyador;
-            atleta.pais.novaMedalla(this);
-            atleta.guanyarMedalla(this);
-            numMedallesRepartides++;
+            if(atleta.guanyarMedalla(this) && atleta.pais.novaMedalla(this)){
+                numMedallesRepartides++;    
+            }
+    
+            
         }
         else this.posicio = MEDALLA_NO_VALIDA;
     }

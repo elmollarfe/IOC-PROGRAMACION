@@ -14,52 +14,45 @@ public class JocsOlimpics2 {
         String fiPrograma;
 
         do {
-            System.out.print("Quin és el teu país? ");
-            String nomPais = InputUtils.readLine();
-            Pais elTeuPais = null;
+            
+                // Utilitzem try-catch per a gestionar els errors en cas de que es superi més
+                // païssos que admeteix la array ni atletes.
 
-            // Utilitzem try-catch per a gestionar els errors en cas de que es superi més
-            // païssos que admeteix la array.
             try {
+                System.out.print("Quin és el teu país? ");
+                String nomPais = InputUtils.readLine();
+                Pais elTeuPais = null;
 
-                // buscar el nom del pais dins del array y si existeix asignarlo a elteupaais
+                // Buscar el nom del pais dins del array i si existeix asignar-lo a elTeuPais
                 for (int i = 0; i < paisos.length; i++) {
                     if (paisos[i] != null && paisos[i].nom.equals(nomPais)) {
                         elTeuPais = paisos[i];
                     }
                 }
 
-                // si no existeix crear nou pais
+                //Si no existeix crear un nou pais
 
                 if (elTeuPais == null) {
-                    elTeuPais = new Pais(nomPais);
-                }
+                    elTeuPais = new Pais(nomPais);    
+                    //Posar en la primera posicio del array que sigui null
+                    int valorBuit = -1;
+                    for (int i = 0; i < paisos.length && valorBuit == -1; i++) {
+                        if (paisos[i] == null) {
+                            valorBuit = i;
+                        }
+                    // Al primer valor buit de l'array assigne el nou país.
+                        paisos[valorBuit] = elTeuPais;
 
-                // posar en la primera posicio del array que sigui null
-
-                int valorBuit = -1;
-                for (int i = 0; i < paisos.length && valorBuit == -1; i++) {
-                    if (paisos[i] == null) {
-                        valorBuit = i;
                     }
                 }
 
-                // Al primer valor buit de l'array assigne el nou país.
-                paisos[valorBuit] = elTeuPais;
+                System.out.print("Quin és el teu nom? ");
+                String elTeuNom = InputUtils.readLine();
+                System.out.print("Quin és el teu esport favorit? ");
+                String elTeuEsport = InputUtils.readLine();
+                Atleta tu = null;
 
-            } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println("Error: Aquesta medalla no es pot generar.");
-
-            }
-
-            System.out.print("Quin és el teu nom? ");
-            String elTeuNom = InputUtils.readLine();
-            System.out.print("Quin és el teu esport favorit? ");
-            String elTeuEsport = InputUtils.readLine();
-            Atleta tu = null;
-
-            try { 
-                // buscar el nom del atleta dins del array i si existeix asignarlo a alTeuNom
+                //Buscar el nom del atleta dins del array i si existeix asignarlo a tu.
                 for (int i = 0; i < atletes.length; i++) {
                     if (atletes[i] != null && atletes[i].nom.equals(elTeuNom)) {
                         tu = atletes[i];
@@ -70,35 +63,33 @@ public class JocsOlimpics2 {
 
                 if (tu == null) {
                     tu = new Atleta(elTeuNom, elTeuPais, elTeuEsport);
-                }
-
-                // posar en la primera posicio del array que sigui null.
-
-                int valorBuitAtleta = -1;
-
-                for (int i = 0; i < atletes.length && valorBuitAtleta == -1; i++) {
-                    if (atletes[i] == null) {
-                        valorBuitAtleta = i;
+                    // Buscar quina es la primera posicio del array que sigui null.
+                    int valorBuitAtleta = -1;
+                    for (int i = 0; i < atletes.length && valorBuitAtleta == -1; i++) {
+                        if (atletes[i] == null) {
+                            valorBuitAtleta = i;
+                        }
                     }
+                    // Al primer valor buit de l'array assigne el nou país.
+                    atletes[valorBuitAtleta] = tu;
                 }
+    
 
-                // Al primer valor buit de l'array assigne el nou país.
-                atletes[valorBuitAtleta] = tu;
+                System.out.print("En quina posició has quedat (1, 2 o 3)? ");
+                int laTevaPosicio = InputUtils.readInt();
+                Medalla laTevaMedalla = new Medalla(laTevaPosicio, tu);
+                System.out.println(laTevaMedalla.descripcio());
+                System.out.println("Medalles de l'atleta " + tu.nom + " : " + tu.getNumMedalles());
+                System.out.println("Medalles del país " + elTeuPais.nom + " : " + elTeuPais.getNumMedalles());
+                tu.mostrarMedalles();
+                elTeuPais.mostrarMedalles();
 
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Error: Aquesta medalla no es pot generar.");
 
             }
 
-            System.out.print("En quina posició has quedat (1, 2 o 3)? ");
-            int laTevaPosicio = InputUtils.readInt();
-            Medalla laTevaMedalla = new Medalla(laTevaPosicio, tu);
-            System.out.println(laTevaMedalla.descripcio());
-            System.out.println("Medalles de l'atleta " + tu.nom + " : " + tu.getNumMedalles());
-            System.out.println("Medalles del país " + elTeuPais.nom + " : " + elTeuPais.getNumMedalles());
-            tu.mostrarMedalles();
-            elTeuPais.mostrarMedalles();
-            System.out.print("Vols introduir una altra medalla? introduix fi per finalitzar ");
+            System.out.print("Vols introduir una altra medalla? (Introduix fi per finalitzar): ");
             InputUtils.readLine();
             fiPrograma = InputUtils.readLine();
         } while (!(fiPrograma.equals("fi")));

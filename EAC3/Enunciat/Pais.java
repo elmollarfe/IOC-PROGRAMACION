@@ -14,9 +14,14 @@ public class Pais {
         numMedalles = 0;
     }
 
-    public void novaMedalla(Medalla m) {
-        medallesPais [numMedalles] = m;
-        numMedalles = numMedalles + 1;
+    public boolean novaMedalla(Medalla m) {
+        if(numMedalles<100){
+            medallesPais [numMedalles] = m;
+            numMedalles = numMedalles + 1;
+            return true;
+        } else{
+            return false;
+        }
        
     }
 
