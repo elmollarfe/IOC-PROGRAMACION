@@ -31,9 +31,12 @@ public class Pais {
         return resultat;
     }
 
-    void mostrarMedalles(){
+    String mostrarMedalles(){
+        String descripcioMedalla = "" ; 
         for (int medalla=0; medalla < numMedalles; medalla++) {
-            System.out.println(medallesGuanyades[medalla].descripcio());
+            descripcioMedalla += medallesGuanyades[medalla].descripcio();        
         }
+        System.out.println(descripcioMedalla);
+        return descripcioMedalla;
     }
 }

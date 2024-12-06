@@ -36,7 +36,7 @@ public class TestJocsOlimpicsUnitat4 {
         assert pais1.getNumMedalles() == 2 : "ERROR: no controles bé el nombre de medalles del país 1";
         System.out.println("Si has arribat aquí ja tens 5 punts dels 6 possibles!");
 
-
+        System.out.println(pais1.mostrarMedalles());
         assert pais1.mostrarMedalles().equals("""
                 L'atleta Santi ha guanyat una medalla d'argent en obtenir la posició 2 a la seva prova de Futbol 5
                 L'equip format pels atletes [Santi, Joel, Raul, Miquel, Joan] han guanyat una medalla d'or en obtenir la posició 1 a la seva prova de Futbol 5
