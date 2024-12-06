@@ -1,8 +1,6 @@
 package EAC4.Enunciat;
 
-import EAC4.Enunciat.Atleta;
-import EAC4.Enunciat.Medalla;
-import EAC4.Enunciat.Pais;
+import EAC4.Enunciat.*;
 
 public class MedallaEquips extends Medalla {
 

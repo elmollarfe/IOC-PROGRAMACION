@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JocsOlimpics",
+            "request": "launch",
+            "mainClass": "Enunciat.JocsOlimpics",
+            "projectName": "EAC4_fad81d87"
+        },
+        {
+            "type": "java",
             "name": "TestJocsOlimpicsUnitat4",
             "request": "launch",
             "mainClass": "Enunciat.TestJocsOlimpicsUnitat4",

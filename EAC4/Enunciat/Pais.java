@@ -12,8 +12,9 @@ public class Pais {
         return numMedalles;
     }
 
-    Pais (String nom) {
+    protected Pais (String nom) {
         this.nom = nom;
+        Medaller.afegirPais(nom);
         numMedalles = 0;
         medallesGuanyades = new Medalla[ MAX_MEDALLES_PAIS];
     }
