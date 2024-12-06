@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TestJocsOlimpicsUnitat4",
+            "request": "launch",
+            "mainClass": "Enunciat.TestJocsOlimpicsUnitat4",
+            "projectName": "EAC4_fad81d87"
+        },
+        {
+            "type": "java",
+            "name": "TestJocsOlimpicsUnitat4",
+            "request": "launch",
+            "mainClass": "EAC4.Enunciat.TestJocsOlimpicsUnitat4",
+            "vmArgs": "ea"
+        },
+        {
+            "type": "java",
+            "name": "JocsOlimpics",
+            "request": "launch",
+            "mainClass": "EAC4.Enunciat.JocsOlimpics",
+            "vmArgs": "ea"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "ea"
+        }
+    ]
+}
