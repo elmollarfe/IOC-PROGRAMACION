@@ -12,9 +12,8 @@ public class Pais {
         return numMedalles;
     }
 
-    protected Pais (String nom) {
+    public Pais (String nom) {
         this.nom = nom;
-        Medaller.afegirPais(nom);
         numMedalles = 0;
         medallesGuanyades = new Medalla[ MAX_MEDALLES_PAIS];
     }
@@ -24,6 +23,7 @@ public class Pais {
         try {
             medallesGuanyades[numMedalles] = m;
             numMedalles++;
+            Medaller.afegirPais(this);
         }
         catch (IndexOutOfBoundsException e) {
             System.out.println("Aquest país no pot guanyar més medalles");
@@ -32,7 +32,7 @@ public class Pais {
         return resultat;
     }
 
-    String mostrarMedalles(){
+    public String mostrarMedalles(){
         String descripcioMedalla = "" ; 
         for (int medalla=0; medalla < numMedalles; medalla++) {
             descripcioMedalla += medallesGuanyades[medalla].descripcio();        

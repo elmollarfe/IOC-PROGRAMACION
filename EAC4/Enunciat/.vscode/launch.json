@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestMedaller",
+            "request": "launch",
+            "mainClass": "EAC4.Enunciat.TestMedaller"
+        },
+        {
+            "type": "java",
             "name": "JocsOlimpics",
             "request": "launch",
             "mainClass": "EAC4.Enunciat.JocsOlimpics"

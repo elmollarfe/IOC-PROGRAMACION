@@ -35,7 +35,7 @@ public class Atleta {
         return resultat;
     }
 
-    String mostrarMedalles(){
+    public String mostrarMedalles(){
         String descripcioMedalla = "";
         for (int medalla=0; medalla < numMedalles; medalla++) {
             
