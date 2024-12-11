@@ -3,7 +3,8 @@ package EAC3.Enunciat;
 public class Pais {
     String nom;
     private int numMedalles;
-    private Medalla [] medallesPais = new Medalla [100];
+    static private final int MAX_MEDALLES_PAIS = 100; 
+    private Medalla [] medallesPais = new Medalla [MAX_MEDALLES_PAIS];
 
     public int getNumMedalles() {
         return numMedalles;
@@ -15,7 +16,7 @@ public class Pais {
     }
 
     public boolean novaMedalla(Medalla m) {
-        if(numMedalles<100){
+        if(numMedalles<MAX_MEDALLES_PAIS){
             medallesPais [numMedalles] = m;
             numMedalles = numMedalles + 1;
             return true;

@@ -50,7 +50,7 @@ public class Medalla {
                                         break;  
                 default:                medalla = "NO DEFINIDA!!!";
             }
-            missatge = "L'atleta " + atleta.nom + " ha guanyat una medalla " + medalla + " en obtenir la posició " + posicio + " a la seva prova de " + atleta.disciplina;
+            missatge = "L'atleta " + atleta.nom + " ha guanyat una medalla " + medalla + " en obtenir la posició " + posicio + " a la seva prova de " + atleta.disciplina + "\n";
         }
 
         return missatge;

@@ -1,0 +1,221 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ArraySencers",
+            "request": "launch",
+            "mainClass": "ArraySencers",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ProvaCompara",
+            "request": "launch",
+            "mainClass": "ProvaCompara",
+            "projectName": "Exercicis bucles_6fc2a29d",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "ProvaSumaParells",
+            "request": "launch",
+            "mainClass": "ProvaSumaParells",
+            "projectName": "Exercicis bucles_6fc2a29d",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArrayAsterisc",
+            "request": "launch",
+            "mainClass": "ArrayAsterisc",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileExemple1",
+            "request": "launch",
+            "mainClass": "DoWhileExemple1",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileExemple2",
+            "request": "launch",
+            "mainClass": "DoWhileExemple2",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileExemple3",
+            "request": "launch",
+            "mainClass": "DoWhileExemple3",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileExemple4",
+            "request": "launch",
+            "mainClass": "DoWhileExemple4",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "DocumentacioExample1",
+            "request": "launch",
+            "mainClass": "DocumentacioExample1",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "EntrNota",
+            "request": "launch",
+            "mainClass": "EntrNota",
+            "projectName": "Exercicis bucles_6fc2a29d",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "EntraNota",
+            "request": "launch",
+            "mainClass": "EntraNota",
+            "projectName": "Exercicis bucles_6fc2a29d",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "ExcepcionsExample1",
+            "request": "launch",
+            "mainClass": "ExcepcionsExample1",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ExcepcionsExample2",
+            "request": "launch",
+            "mainClass": "ExcepcionsExample2",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ForMostra",
+            "request": "launch",
+            "mainClass": "ForMostra",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ForMultiples",
+            "request": "launch",
+            "mainClass": "ForMultiples",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ForNotes",
+            "request": "launch",
+            "mainClass": "ForNotes",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ForSuma",
+            "request": "launch",
+            "mainClass": "ForSuma",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ForTaula",
+            "request": "launch",
+            "mainClass": "ForTaula",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "MitjanaNotes",
+            "request": "launch",
+            "mainClass": "MitjanaNotes",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "MostrarNotes",
+            "request": "launch",
+            "mainClass": "MostrarNotes",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "NotesAprovades",
+            "request": "launch",
+            "mainClass": "NotesAprovades",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "ReserveArrayWhile",
+            "request": "launch",
+            "mainClass": "ReserveArrayWhile",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "Suma10",
+            "request": "launch",
+            "mainClass": "Suma10",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "TaulaMultiplicar",
+            "request": "launch",
+            "mainClass": "TaulaMultiplicar",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "TaulaNombres",
+            "request": "launch",
+            "mainClass": "TaulaNombres",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "Triangle",
+            "request": "launch",
+            "mainClass": "Triangle",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "WhileExemple4",
+            "request": "launch",
+            "mainClass": "WhileExemple4",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "WhileExempleArray",
+            "request": "launch",
+            "mainClass": "WhileExempleArray",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        },
+        {
+            "type": "java",
+            "name": "programa",
+            "request": "launch",
+            "mainClass": "programa",
+            "projectName": "Exercicis bucles_6fc2a29d"
+        }
+    ]
+}

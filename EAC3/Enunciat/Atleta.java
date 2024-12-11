@@ -4,8 +4,10 @@ public class Atleta {
     String nom;
     Pais pais;
     String disciplina;
-    private Medalla [] medallesAtleta  = new Medalla [10];
+    static private final int MAX_MEDALLES_ATLETA = 10; 
+    private Medalla [] medallesAtleta  = new Medalla [MAX_MEDALLES_ATLETA];
     private int numMedalles;
+
 
     public int getNumMedalles() {
         return numMedalles;
@@ -19,7 +21,7 @@ public class Atleta {
     }
 
     public boolean guanyarMedalla(Medalla m) {
-        if(numMedalles<10){
+        if(numMedalles<MAX_MEDALLES_ATLETA){
             medallesAtleta[numMedalles] = m ;
             numMedalles++;
             return true;

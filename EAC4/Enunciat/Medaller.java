@@ -41,7 +41,7 @@ public class Medaller {
     }
 
     public static void mostrarMedallerOrdenat(){
-        System.out.println("Ordenadar per nombre de medalles: ");
+        System.out.println("\nOrdenadada per nombre de medalles: ");
         Arrays.sort(paisosMedalla,0, totalPaisos, (p2, p1)-> 
                     Integer.compare(p1.getNumMedalles(), p2.getNumMedalles())
         );
@@ -52,7 +52,7 @@ public class Medaller {
     }
 
     public static void mostrarMedallerOrdenatAlfabetic(){
-        System.out.println("Ordenadada alfabèticament per els noms de països:");
+        System.out.println(" \nOrdenada alfabèticament per els noms de països:");
         Arrays.sort(paisosMedalla,0, totalPaisos,(p1,p2)-> p1.nom.compareTo (p2.nom));
         for(int i =0; i< totalPaisos; i++){
             System.out.println("El país " + paisosMedalla[i].nom + " ha guanyat: " + paisosMedalla[i].getNumMedalles() + " medalles.");

@@ -33,6 +33,11 @@ public class InputUtils {
             // Ignorar el valor invàlid
             scan.next();
         }
+        
+
+        // TODO: moure while de valormin y valor max i afegir if si valormin valormax no es null
+        // TODO: canviar crida a readIntWitherror a scan.next + hasnextiNt
+        // TODO: a les altres funcions cridar a readintwhitherror amnb null al valormin valormax
 
         // Ara ja estem segurs que serà un valor vàlid. Llegir el valor i retornar-lo
         resultat = scan.nextInt();
@@ -71,6 +76,8 @@ public class InputUtils {
     public static int readInt(String msg, int valorMin, int valorMax, String err){
         System.out.println(msg);
         int valor = readIntwithError(err);
+
+        //TODO: eliminar while
         while(valor < valorMin || valor > valorMax){
             System.out.println(err);
             valor = readIntwithError(err);

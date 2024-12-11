@@ -8,16 +8,13 @@ public class InputUtils {
     // i que, a més, tothom fa servir el mateix.
     private static Scanner scan = new Scanner(System.in);
 
-    // Definim quin és el codi d'error
-    public static final int INPUT_ERROR = -1;
-
     // La lectura d'un String mai pot donar un error
     public static String readLine() {
         return scan.nextLine();
     }
 
     // La lectura d'un enter pot donar error si el que hi ha a l'entrada
-    // no és un enter. Cal controlar-lo
+    // no és un enter. Cal controlar-lo fins que sigui un nombre.
     public static int readInt() {
 
         int resultat = 0;
