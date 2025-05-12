@@ -6,8 +6,7 @@ public class Natural extends ObjecteSideral {
     private int anyDescubriment;
 
     public Natural (String nom, double distancia, String descubridor, int anyDescubriment){
-        super(nom, distancia);
-        super.setServeixPerPosicionar(true); 
+        super(nom, distancia, true);
         this.descubridor = descubridor; 
         this.anyDescubriment = anyDescubriment;
 

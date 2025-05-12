@@ -68,7 +68,7 @@ public class InputUtils {
 
     //La lectura d'un enter pot donar error si el que hi ha a l'entrada 
     // no és un enter. Cal controlar-lo
-    public static int readInt() {
+    public static int readInt(){
         int resultat;
         //Ho demanarà tantes vegades com calgui fins que s'entri un valor vàlid
         while (!scan.hasNextInt()) {
@@ -82,17 +82,20 @@ public class InputUtils {
 
     public static boolean readBoolean(){
         boolean resultat = false;
+        boolean entradaCorrecta = false; 
         do{
             String lletra = readLine();
             if(lletra.equalsIgnoreCase("S")){
                 resultat = true;
+                entradaCorrecta = true;
             } else if(lletra.equalsIgnoreCase("N")){
                 resultat = false; 
+                entradaCorrecta = true;
             } else{
                 System.out.println("El valor no es correcte. S/N");
             }
 
-        }while(!resultat);
+        }while(!entradaCorrecta);
         
         return resultat;
 
@@ -103,3 +106,4 @@ public class InputUtils {
         scan.close();
     }
 }
+

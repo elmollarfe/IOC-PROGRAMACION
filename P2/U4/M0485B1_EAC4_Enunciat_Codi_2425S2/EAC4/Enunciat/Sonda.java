@@ -8,7 +8,7 @@ public class Sonda extends Artificial {
 
     @Override
     protected String descripcio(){
-
+        
         return super.descripcio() + "Sonda.";
 
     }

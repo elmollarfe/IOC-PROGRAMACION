@@ -4,7 +4,7 @@ public class MCO_v2 {
 
     public static void main(String[] args) {
 
-        int maxObjectes = 3;
+        int maxObjectes = 15;
         ObjecteSideral [] llistaObjecteSiderals = new ObjecteSideral[maxObjectes];
         boolean sortir = false;
         int numObjectes = 0;
@@ -20,7 +20,8 @@ public class MCO_v2 {
             // String nomPlaneta = InputUtils.readLine("Quin planeta vols tenir de
             // referència? ");
             int tipusObjecte = InputUtils.readInt(
-                    "Quin tipus de objecte vols tenir de referència?  Introdueix el nombre: \n  1.Satèl·lits \n  2.Sondes \n  3.Naus \n  4.Astres \n  5.Planetes \n  6.Meteorits \n  7.Cometes \n\r ");
+                    "Quin tipus de objecte vols tenir de referència?  Introdueix el nombre: \n " +                                                
+                    " 1.Satèl·lits \n  2.Sondes \n  3.Naus \n  4.Astres \n  5.Planetes \n  6.Meteorits \n  7.Cometes \n\r ");
             InputUtils.readLine();
             String nomObjecte = InputUtils.readLine("Quin nom té? ");
             System.out.print("A quina distància es troba " + nomObjecte + "? ");
@@ -36,12 +37,6 @@ public class MCO_v2 {
                     System.out.print("Quin pais el va construir? ");
                     paisConstructorObjecte = InputUtils.readLine();
                     break;
-
-                default:
-                    break;
-            }
-
-            switch (tipusObjecte) {
                 case 4:
                 case 5:
                 case 6:
@@ -156,10 +151,10 @@ public class MCO_v2 {
 
         } while (sortir == false);
 
-        ObjecteSideral obj ;
+        System.out.println("\n Descripció dels darrers Objectes Siderals introduïts \n ");
 
         for(int i =0; i<llistaObjecteSiderals.length  && llistaObjecteSiderals[i] != null; i++){
-              obj = llistaObjecteSiderals[i];
+             ObjecteSideral obj = llistaObjecteSiderals[i];
              if (obj instanceof Astre) {
                 Astre ast = (Astre) obj;
                 System.out.println(ast.descripcio());

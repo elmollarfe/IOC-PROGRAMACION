@@ -21,7 +21,6 @@ public class ObjecteSideral {
         this.nom= nom; 
         this.distancia = distancia;
         this.possicionament = possicionament;
-        this.possicionament = true; // TODO revisar esta linia sobra
     }
 
     public String getNom(){
